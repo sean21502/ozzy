@@ -57,6 +57,7 @@ source 'https://rubygems.org'
  end
 
  gem 'bootstrap-sass'
+ gem 'bootswatch-rails'
 
  gem 'devise'
  gem 'figaro', '1.0'
