@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootswatch/yeti/variables";
+@import "bootswatch/yeti/bootswatch";

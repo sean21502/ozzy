@@ -41,12 +41,13 @@ source 'https://rubygems.org'
    gem 'listen', '~> 3.0.5'
    gem 'better_errors'
    gem 'binding_of_caller'
+   gem 'pry-rails'
  end
 
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
-   gem 'pry-rails'
+  
  end
 
  group :test do
@@ -57,6 +58,7 @@ source 'https://rubygems.org'
  end
 
  gem 'bootstrap-sass'
+ gem 'bootswatch-rails'
 
  gem 'devise'
  gem 'figaro', '1.0'
