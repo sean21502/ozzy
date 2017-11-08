@@ -1,0 +1,18 @@
+<h1>RegisteredApplications#index</h1>
+<p>Find me in app/views/registered_applications/index.html.erb</p>
+
+
+<h1>Application</h1>
+ <% @registered_applications.each do |registered_application| %>
+   <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to registered_application.name, registered_application %>
+       </h4>
+     </div>
+   </div>
+
+ <% end %>
+ <div class="col-md-4">
+ 	<%= link_to "New App", new_registered_applications_path, class: 'btn btn-success' %>
+ </div>
