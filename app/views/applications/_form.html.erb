@@ -1,0 +1,15 @@
+<%= form_for application do |app| %>
+  
+  <div class="form-group">
+    <%= app.label :name %>
+      <%= app.text_field :name, class: 'form-control', placeholder: "Enter name of application" %>
+  </div>
+  <div class="form-group">
+    <%= app.label :url %>
+    <%= app.text_field :url, rows: 8, class: 'form-control', placeholder: "Enter url" %>
+  </div>
+  <div class="form-group">
+    <%= app.submit "Save", class: 'btn btn-success' %>
+  </div>
+
+<% end %>
