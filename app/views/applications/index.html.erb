@@ -1,0 +1,14 @@
+<h1>All Apps</h1>
+ <% @applications.each do |application| %>
+   <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to application.name, application %>
+       </h4>
+     </div>
+   </div>
+
+ <% end %>
+ <div class="col-md-4">
+ 	<%= link_to "New app", new_application_path, class: 'btn btn-success' %>
+ </div>
