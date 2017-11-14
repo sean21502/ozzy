@@ -9,7 +9,8 @@ class ApplicationsController < ApplicationController
   end
 
   def show
-    @application = Application.find(params[:id])
+  	@user = current_user
+    @application = @user.applications.find(params[:id])
    
   end
 

@@ -53,7 +53,7 @@ source 'https://rubygems.org'
  group :test do
    gem 'shoulda'
    gem 'faker'
-   gem 'factory_girl_rails'
+   gem 'factory_bot_rails'
    gem 'simplecov'
  end
 
@@ -65,4 +65,5 @@ source 'https://rubygems.org'
  gem 'pundit'
  gem 'stripe'
  gem 'redcarpet'
+ gem 'random_data'
 
