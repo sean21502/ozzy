@@ -1,17 +1,17 @@
 class ApplicationsController < ApplicationController
+  
   def index
   	@applications = Application.all
   end
 
 	def new
    	@application = Application.new
-    
   end
 
   def show
   	@user = current_user
     @application = @user.applications.find(params[:id])
-   
+    @events = @application.events.group_by(&:name)
   end
 
   def create
