@@ -10,7 +10,7 @@ class ApplicationsController < ApplicationController
 
   def show
   	@user = current_user
-    @application = @user.applications.find(params[:id])
+    @applications = @user.applications.find(params[:id])
     @events = @application.events.group_by(&:name)
   end
 

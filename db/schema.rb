@@ -23,8 +23,10 @@ ActiveRecord::Schema.define(version: 20171118162136) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
+    t.integer "application_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["application_id"], name: "index_events_on_application_id"
   end
 
   create_table "users", force: :cascade do |t|
