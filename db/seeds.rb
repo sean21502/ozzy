@@ -28,7 +28,6 @@ applications = Application.all
 #event seed
 1.times do
 	event = Event.create!(
-		user: users.sample,
 		application:  applications.sample,
 		name:  'clicked home button',
 	)
