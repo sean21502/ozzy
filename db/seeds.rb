@@ -6,28 +6,31 @@ User.create!(
   confirmed_at: '2017-11-15'
 )
 
-5.times do
+1.times do
   User.create!(
-    email:    RandomData.random_email,
-    password: RandomData.random_sentence,
+    email:    'happ@gmail.com',
+    password: '123456',
     confirmed_at: '2017-11-14'
   )
 end
 users = User.all
 
-10.times do
+#appilcation seed
+1.times do
 	application = Application.create!(
 		user:  users.sample,
-		name:  RandomData.random_sentence,
-		url:  RandomData.random_sentence 
+		name:  'test app',
+		url:  'www.google.com' 
 	)
 end
 applications = Application.all
 
-10.times do
+#event seed
+1.times do
 	event = Event.create!(
-		application:  application.sample,
-		name:  RandomData.random_sentence,
+		user: users.sample,
+		application:  applications.sample,
+		name:  'clicked home button',
 	)
 end
 
