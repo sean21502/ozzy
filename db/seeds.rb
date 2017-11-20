@@ -8,7 +8,7 @@ User.create!(
 
 1.times do
   User.create!(
-    email:    'happ@gmail.com',
+    email:    'happy@mail.com',
     password: '123456',
     confirmed_at: '2017-11-14'
   )
@@ -19,7 +19,7 @@ users = User.all
 1.times do
 	application = Application.create!(
 		user:  users.sample,
-		name:  'test app',
+		name:  'test app from seed',
 		url:  'www.google.com' 
 	)
 end
@@ -29,7 +29,7 @@ applications = Application.all
 1.times do
 	event = Event.create!(
 		application:  applications.sample,
-		name:  'clicked home button',
+		name:  'test event from seed',
 	)
 end
 
