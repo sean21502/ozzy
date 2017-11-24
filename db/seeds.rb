@@ -1,4 +1,4 @@
-require 'random_data'
+require 'faker'
 
 User.create!(
   email: 'sean@gmail.com',
@@ -6,9 +6,9 @@ User.create!(
   confirmed_at: '2017-11-15'
 )
 
-1.times do
+5.times do
   User.create!(
-    email:    'happy@mail.com',
+    email:    Faker::Internet.email,
     password: '123456',
     confirmed_at: '2017-11-14'
   )
@@ -16,20 +16,20 @@ end
 users = User.all
 
 #appilcation seed
-1.times do
+10.times do
 	application = Application.create!(
 		user:  users.sample,
-		name:  'test app from seed',
-		url:  'www.google.com' 
+		name:  Faker::Name.name,
+		url:  Faker::Name.name 
 	)
 end
 applications = Application.all
 
 #event seed
-1.times do
+10.times do
 	event = Event.create!(
 		application:  applications.sample,
-		name:  'test event from seed',
+		name:  Faker::Name.name,
 	)
 end
 

@@ -1,5 +1,5 @@
 require 'rails_helper'
-require 'randomdata'
+require 'faker'
 
 RSpec.describe ApplicationsController, type: :controller do
 
@@ -51,16 +51,16 @@ RSpec.describe ApplicationsController, type: :controller do
 
     describe "APPLICATION create" do
     it "increases the number of Application by 1" do
-      expect{ post :create, params: { application: { name: RandomData.random_word , url: RandomData.random_sentence}}}.to change(Application,:count).by(1)
+      expect{ post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}}.to change(Application,:count).by(1)
     end
 
     it "assigns the new post to @application" do
-      post :create, params: { application: { name: RandomData.random_word , url: RandomData.random_sentence}}
+      post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}
       expect(assigns(:wiki)).to eq Application.last
     end
 
     it "redirects to the new application" do
-      post :create, params: { application: { name: RandomData.random_word , url: RandomData.random_sentence}}
+      post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}
       expect(response).to redirect_to Application.last
     end
   end
@@ -89,8 +89,8 @@ RSpec.describe ApplicationsController, type: :controller do
 
   describe "PUT update" do
     it "updates post with expected attributes" do
-      new_name = RandomData.random_word
-      new_url = RandomData.random_sentence
+      new_name = Faker::Name.name
+      new_url = Faker::Name.name
 
       put :update, params: { id: @my_user.id, application: {name: new_name, url: new_url } }
 
@@ -101,8 +101,8 @@ RSpec.describe ApplicationsController, type: :controller do
     end
 
     it "redirects to the updated application" do
-      new_name = RandomData.random_word
-      new_urk = RandomData.random_sentence
+      new_name = Faker::Name.name
+      new_urk = Faker::Name.name
 
       put :update, params: { id: @my_user.id, application: {name: new_name, url: new_url } }
       expect(response).to redirect_to @my_application
