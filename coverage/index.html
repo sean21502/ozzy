@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-24T12:27:41-05:00">2017-11-24T12:27:41-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-24T18:31:44-05:00">2017-11-24T18:31:44-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">64.62%</span></span>
+    (<span class="covered_percent"><span class="yellow">85.71%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.72
+       <span class="green">
+         1.08
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>260</b> relevant lines. 
-    <span class="green"><b>168</b> lines covered</span> and
-    <span class="red"><b>92</b> lines missed </span>
+    <b>259</b> relevant lines. 
+    <span class="green"><b>222</b> lines covered</span> and
+    <span class="red"><b>37</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#c4d033f4e59433c2a2137aab137338ffd0ebe166" class="src_link" title="app/controllers/applications_controller.rb">app/controllers/applications_controller.rb</a></td>
-        <td class="red strong">27.03 %</td>
+        <td class="red strong">70.27 %</td>
         <td>64</td>
         <td>37</td>
-        <td>10</td>
-        <td>27</td>
-        <td>0.3</td>
+        <td>26</td>
+        <td>11</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -302,12 +302,12 @@
       
       <tr>
         <td class="strong"><a href="#4abc228b25e2be6f40ac5ac39d9640a1ec882f0a" class="src_link" title="spec/controllers/applications_controller_spec.rb">spec/controllers/applications_controller_spec.rb</a></td>
-        <td class="red strong">39.19 %</td>
+        <td class="green strong">91.89 %</td>
         <td>124</td>
         <td>74</td>
-        <td>29</td>
-        <td>45</td>
-        <td>0.6</td>
+        <td>68</td>
+        <td>6</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -323,9 +323,9 @@
       <tr>
         <td class="strong"><a href="#48c864b7a904a176bd8fca603b5394263543aadf" class="src_link" title="spec/factories/user.rb">spec/factories/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>7</td>
-        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -520,11 +520,11 @@
         <div class="source_table" id="c4d033f4e59433c2a2137aab137338ffd0ebe166">
   <div class="header">
     <h3>app/controllers/applications_controller.rb</h3>
-    <h4><span class="red">27.03 %</span> covered</h4>
+    <h4><span class="red">70.27 %</span> covered</h4>
     <div>
       <b>37</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>27</b> lines missed.</span>
+      <span class="green"><b>26</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
     </div>
   </div>
   
@@ -549,8 +549,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="4">
-          
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
           <code class="ruby">  	@applications = Application.all</code>
         </li>
@@ -573,8 +573,8 @@
           <code class="ruby">	def new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">   	@applications = Application.new</code>
         </li>
@@ -597,8 +597,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">  	@user = current_user</code>
         </li>
@@ -633,8 +633,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
+        <li class="covered" data-hits="3" data-linenumber="18">
+          <span class="hits">3</span>
           
           <code class="ruby">    @applications = Application.new(application_params)</code>
         </li>
@@ -645,8 +645,8 @@
           <code class="ruby">   </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
+        <li class="covered" data-hits="3" data-linenumber="20">
+          <span class="hits">3</span>
           
           <code class="ruby">    @application.user = current_user</code>
         </li>
@@ -717,8 +717,8 @@
           <code class="ruby">	def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
-          
+        <li class="covered" data-hits="3" data-linenumber="32">
+          <span class="hits">3</span>
           
           <code class="ruby">    @application = Application.find(params[:id])</code>
         </li>
@@ -741,14 +741,14 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="36">
-          
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
           <code class="ruby">    @application = Application.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
-          
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">    @application.assign_attributes(application_params)</code>
         </li>
@@ -759,20 +759,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
           <code class="ruby">    if @application.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:notice] = &quot;Application was updated.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to [@application]</code>
         </li>
@@ -813,8 +813,8 @@
           <code class="ruby">    def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">    @application = Application.find(params[:id])</code>
         </li>
@@ -825,20 +825,20 @@
           <code class="ruby">    </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
           
           <code class="ruby">    if @application.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
           
           <code class="ruby">      flash[:notice] = &quot;\&quot;#{@application.name}\&quot; was deleted successfully.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to root_path</code>
         </li>
@@ -897,8 +897,8 @@
           <code class="ruby">  def application_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="4" data-linenumber="62">
+          <span class="hits">4</span>
           
           <code class="ruby">    params.require(:application).permit(:name, :url)</code>
         </li>
@@ -4390,11 +4390,11 @@
         <div class="source_table" id="4abc228b25e2be6f40ac5ac39d9640a1ec882f0a">
   <div class="header">
     <h3>spec/controllers/applications_controller_spec.rb</h3>
-    <h4><span class="red">39.19 %</span> covered</h4>
+    <h4><span class="green">91.89 %</span> covered</h4>
     <div>
       <b>74</b> relevant lines. 
-      <span class="green"><b>29</b> lines covered</span> and
-      <span class="red"><b>45</b> lines missed.</span>
+      <span class="green"><b>68</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -4443,8 +4443,8 @@
           <code class="ruby">    @my_user = FactoryBot.create(:user)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="17" data-linenumber="8">
+          <span class="hits">17</span>
           
           <code class="ruby">    @my_application = FactoryBot.create(:application, user: @my_user)</code>
         </li>
@@ -4473,14 +4473,14 @@
           <code class="ruby">    it &quot;returns http success&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
         </li>
@@ -4515,8 +4515,8 @@
           <code class="ruby">    it &quot;returns http success&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :show, params: { id: @my_application.id }</code>
         </li>
@@ -4545,8 +4545,8 @@
           <code class="ruby">    it &quot;renders the #show view&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :show, params: { id: @my_user.id }</code>
         </li>
@@ -4575,8 +4575,8 @@
           <code class="ruby">    it &quot;assigns @my_application to @application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :show, params: { id: @my_user.id }</code>
         </li>
@@ -4617,14 +4617,14 @@
           <code class="ruby">    it &quot;returns http success&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
-          
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
-          
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
         </li>
@@ -4647,14 +4647,14 @@
           <code class="ruby">    it &quot;renders the #new view&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to render_template :new</code>
         </li>
@@ -4677,14 +4677,14 @@
           <code class="ruby">    it &quot;instantiates @application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(assigns(:application)).not_to be_nil</code>
         </li>
@@ -4719,8 +4719,8 @@
           <code class="ruby">    it &quot;increases the number of Application by 1&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
           
           <code class="ruby">      expect{ post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}}.to change(Application,:count).by(1)</code>
         </li>
@@ -4743,8 +4743,8 @@
           <code class="ruby">    it &quot;assigns the new post to @application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">      post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}</code>
         </li>
@@ -4773,8 +4773,8 @@
           <code class="ruby">    it &quot;redirects to the new application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
           <code class="ruby">      post :create, params: { application: { name: Faker::Name.name , url: Faker::Name.name}}</code>
         </li>
@@ -4815,14 +4815,14 @@
           <code class="ruby">    it &quot;returns http success&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="70">
-          
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :edit, params: { id: @my_user.id }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
         </li>
@@ -4845,14 +4845,14 @@
           <code class="ruby">    it &quot;renders the #edit view&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
-          
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :edit, params: { id: @my_user.id }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
-          
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to render_template :edit</code>
         </li>
@@ -4875,8 +4875,8 @@
           <code class="ruby">    it &quot;assigns post to be updated to @application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="80">
-          
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :edit, params: { id: @my_user.id }</code>
         </li>
@@ -4887,8 +4887,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="82">
-          
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
           
           <code class="ruby">      application_instance = assigns(:application)</code>
         </li>
@@ -4899,20 +4899,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="84">
-          
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(application_instance.id).to eq @my_user.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="85">
-          
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(application_instance.name).to eq @my_application.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="86">
-          
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(application_instance.url).to eq @my_application.url</code>
         </li>
@@ -4947,14 +4947,14 @@
           <code class="ruby">    it &quot;updates post with expected attributes&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="92">
-          
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
           
           <code class="ruby">      new_name = Faker::Name.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="93">
-          
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
           
           <code class="ruby">      new_url = Faker::Name.name</code>
         </li>
@@ -4965,8 +4965,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
-          
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
           
           <code class="ruby">      put :update, params: { id: @my_user.id, application: {name: new_name, url: new_url } }</code>
         </li>
@@ -4977,26 +4977,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="97">
-          
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
           
           <code class="ruby">      updated_application = assigns(:application)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="98">
-          
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(updated_application.id).to eq @my_user.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="99">
-          
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(updated_application.name).to eq new_name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="100">
-          
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(updated_application.url).to eq new_url</code>
         </li>
@@ -5019,14 +5019,14 @@
           <code class="ruby">    it &quot;redirects to the updated application&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="104">
-          
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
           
           <code class="ruby">      new_name = Faker::Name.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="105">
-          
+        <li class="covered" data-hits="1" data-linenumber="105">
+          <span class="hits">1</span>
           
           <code class="ruby">      new_urk = Faker::Name.name</code>
         </li>
@@ -5037,8 +5037,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="107">
-          
+        <li class="covered" data-hits="1" data-linenumber="107">
+          <span class="hits">1</span>
           
           <code class="ruby">      put :update, params: { id: @my_user.id, application: {name: new_name, url: new_url } }</code>
         </li>
@@ -5079,20 +5079,20 @@
           <code class="ruby">    it &quot;deletes the post&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="114">
-          
+        <li class="covered" data-hits="1" data-linenumber="114">
+          <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, params: { id: @my_user.id }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="115">
-          
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
           
           <code class="ruby">      count = Application.where({id: @my_user.id}).size</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="116">
-          
+        <li class="covered" data-hits="1" data-linenumber="116">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(count).to eq 0</code>
         </li>
@@ -5115,14 +5115,14 @@
           <code class="ruby">    it &quot;redirects to posts index&quot; do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="120">
-          
+        <li class="covered" data-hits="1" data-linenumber="120">
+          <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, params: { id: @my_user.id }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="121">
-          
+        <li class="covered" data-hits="1" data-linenumber="121">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to redirect_to root_path</code>
         </li>
@@ -5216,8 +5216,8 @@
     <h3>spec/factories/user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5240,40 +5240,34 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    name Faker::Name.name</code>
+          <code class="ruby">    email Faker::Internet.email</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    email Faker::Internet.email</code>
+          <code class="ruby">    password &quot;password&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    password &quot;password&quot;</code>
+          <code class="ruby">    password_confirmation &quot;password&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    password_confirmation &quot;password&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
           <code class="ruby">    confirmed_at Date.today</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
