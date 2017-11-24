@@ -1,9 +1,10 @@
 require 'rails_helper'
+require 'faker'
 
 RSpec.describe Application, type: :model do
 
-  let(:name) { RandomData.random_sentence }
-  let(:url) { RandomData.randoom_url }
+  let(:name) { Faker::Name.name }
+  let(:url) { Faker::Name.name }
  
 
   let(:application) { Application.create!(name: "New Application Title", url: "New Application Url") }

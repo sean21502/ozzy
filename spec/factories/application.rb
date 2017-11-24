@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :application do
-    name RandomData.random_name
-    url RandomData.random_sentence
+    name Faker::Name.name
+    url Faker::Name.name
     user
   end
 end
