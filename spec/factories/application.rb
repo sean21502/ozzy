@@ -1,8 +1,7 @@
 FactoryBot.define do
   factory :application do
-    name { Faker::Simpsons.character }
-    url { Faker::Simpsons.character }
+    name Faker::Name.name
+    url Faker::Name.name
     user
   end
-
 end
