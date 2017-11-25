@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   match '/events', to: 'events#preflight', via: [:options]
 
-  resources :applications, :events, only: [:create]
+  resources :events, only: [:create]
+
+end
+
+  resources :applications
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -9,9 +9,12 @@ class API::EventsController < ApplicationController
   end
 
   skip_before_action :verify_authenticity_token
+
+# turn off Devise on this controller
+  before_action :authenticate_user!, except: [:create]
  
   def create
- 		registered_application = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
+ 		application = Application.find_by(url: request.env['HTTP_ORIGIN'])
   end
 
   def preflight
