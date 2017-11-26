@@ -1,6 +1,6 @@
 class API::EventsController < ApplicationController
 
-  before_filter :set_access_control_headers
+  before_action :set_access_control_headers
 
   def set_access_control_headers
     headers['Access-Control-Allow-Origin'] = '*'
@@ -15,6 +15,8 @@ class API::EventsController < ApplicationController
  
   def create
  		application = Application.find_by(url: request.env['HTTP_ORIGIN'])
+    @event = Event.new(event_params)
+    @event.application = application
   end
 
   def preflight
