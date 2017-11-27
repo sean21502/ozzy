@@ -17,11 +17,11 @@ class ApplicationsController < ApplicationController
   def create
     @applications = Application.new(application_params)
    
-    @application.user = current_user
+    @applications.user = current_user
 
-   	if @application.save
+   	if @applications.save
       flash[:notice] = "Application was saved."
-      redirect_to @application
+      redirect_to @applications
     else
       flash.now[:alert] = "There was an error saving the post. Please try again."
       render :new

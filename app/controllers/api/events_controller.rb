@@ -14,9 +14,17 @@ class API::EventsController < ApplicationController
   before_action :authenticate_user!, except: [:create]
  
   def create
- 		application = Application.find_by(url: request.env['HTTP_ORIGIN'])
-    @event = Event.new(event_params)
-    @event.application = application
+    application = Application.find_by(url: request.env['HTTP_ORIGIN'])
+      if application == nil
+        render json: {errors: "Unregistered application"}, status: :unprocessable_entity
+      else
+    @event = application.events.new(event_params)
+      if @event.save
+        render json: @event, status: :created
+      else
+        render json: @event.errors, status: :unprocessable_entity
+      end
+    end
   end
 
   def preflight
