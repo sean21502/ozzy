@@ -122,6 +122,7 @@ GEM
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.3)
+    rack-cors (1.0.2)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -157,7 +158,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.2.1)
-    random_data (1.6.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -249,10 +249,10 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.0)
   pundit
+  rack-cors
   rails (~> 5.1.2)
   rails-controller-testing
   rails_12factor
-  random_data
   redcarpet
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)

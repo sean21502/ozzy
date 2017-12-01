@@ -14,6 +14,7 @@ class API::EventsController < ApplicationController
   before_action :authenticate_user!, except: [:create]
  
   def create
+    binding.pry
     application = Application.find_by(url: request.env['HTTP_ORIGIN'])
       if application == nil
         render json: {errors: "Unregistered application"}, status: :unprocessable_entity

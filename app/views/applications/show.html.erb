@@ -9,3 +9,8 @@
     <%= link_to "Delete Wiki", @applications, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this application?'} %>
   </div>
 </div>
+
+<h3>events</h3>   
+<% @events.each do |event, count| %>     
+	<%= "#{event}: #{count.length}" %><br />   
+	<% end %>

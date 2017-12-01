@@ -216,51 +216,19 @@
         null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/seanhite/Desktop/Ozzy/ozzy/config/boot.rb": [
         1,
         null,
         1
-      ],
-      "/Users/seanhite/Desktop/Ozzy/ozzy/lib/random_data.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null
       ],
       "/Users/seanhite/Desktop/Ozzy/ozzy/config/environments/test.rb": [
         1,
@@ -634,21 +602,8 @@
         1
       ],
       "/Users/seanhite/Desktop/Ozzy/ozzy/config/initializers/inflections.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
         null
       ],
       "/Users/seanhite/Desktop/Ozzy/ozzy/config/initializers/mime_types.rb": [
@@ -708,6 +663,14 @@
       ],
       "/Users/seanhite/Desktop/Ozzy/ozzy/config/routes.rb": [
         1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
         null,
         1,
         null,
@@ -913,6 +876,6 @@
         null
       ]
     },
-    "timestamp": 1511566304
+    "timestamp": 1512097053
   }
 }
