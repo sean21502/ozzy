@@ -65,5 +65,5 @@ source 'https://rubygems.org'
  gem 'pundit'
  gem 'stripe'
  gem 'redcarpet'
- gem 'random_data'
+ gem 'rack-cors'
 
