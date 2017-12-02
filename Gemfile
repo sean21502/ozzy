@@ -66,4 +66,6 @@ source 'https://rubygems.org'
  gem 'stripe'
  gem 'redcarpet'
  gem 'rack-cors'
+ gem 'chartkick'
+ gem 'groupdate'
 
