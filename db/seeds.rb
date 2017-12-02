@@ -6,17 +6,10 @@ User.create!(
   confirmed_at: '2017-11-15'
 )
 
-5.times do
-  User.create!(
-    email:    Faker::Internet.email,
-    password: '123456',
-    confirmed_at: '2017-11-14'
-  )
-end
 users = User.all
 
 #appilcation seed
-10.times do
+11.times do
 	application = Application.create!(
 		user:  users.sample,
 		name:  Faker::Name.name,
@@ -26,7 +19,7 @@ end
 applications = Application.all
 
 #event seed
-10.times do
+100.times do
 	event = Event.create!(
 		application:  applications.sample,
 		name:  Faker::Name.name,
